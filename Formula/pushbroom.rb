@@ -1,6 +1,7 @@
 class Pushbroom < Formula
   desc "Keep your filesystem free of clutter"
   homepage "https://github.com/gpanders/pushbroom"
+  head "https://github.com/gpanders/pushbroom.git"
   url "https://github.com/gpanders/pushbroom/archive/v0.1.4.tar.gz"
   sha256 "6317103d5704e8d5cf224d87500963b5953e298c0f8e687bb71ddd1537646cfc"
 
