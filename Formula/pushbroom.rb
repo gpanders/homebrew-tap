@@ -1,6 +1,6 @@
 class Pushbroom < Formula
   desc "Keep your filesystem free of clutter"
-  homepage ""
+  homepage "https://github.com/gpanders/pushbroom"
   url "https://github.com/gpanders/pushbroom/archive/v0.1.4.tar.gz"
   sha256 "6317103d5704e8d5cf224d87500963b5953e298c0f8e687bb71ddd1537646cfc"
 
@@ -8,7 +8,9 @@ class Pushbroom < Formula
 
   def install
     etc.install "pushbroom.conf"
-    bin.install "bin/pushbroom"
+    libexec.install "bin/pushbroom" => "pushbroom.py"
+    libexec.install "src/pushbroom"
+    bin.install_symlink libexec/"pushbroom.py" => "pushbroom"
   end
 
   def caveats; <<~EOS
