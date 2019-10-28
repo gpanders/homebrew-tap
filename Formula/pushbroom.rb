@@ -1,9 +1,9 @@
 class Pushbroom < Formula
   desc "Keep your filesystem free of clutter"
   homepage "https://github.com/gpanders/pushbroom"
-  head "https://github.com/gpanders/pushbroom.git"
   url "https://github.com/gpanders/pushbroom/archive/v0.1.5.tar.gz"
   sha256 "22037cb7d1f8ecdf438ba6fda161de4b1cf7f2c6924ae8952d1e00d80119d06e"
+  head "https://github.com/gpanders/pushbroom.git"
 
   depends_on "python"
 
@@ -52,6 +52,6 @@ class Pushbroom < Formula
   end
 
   test do
-    system `#{bin}/"pushbroom", "--version"`
+    system "#{bin}/pushbroom", "--version"
   end
 end
