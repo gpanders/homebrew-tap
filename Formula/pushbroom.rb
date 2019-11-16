@@ -1,8 +1,8 @@
 class Pushbroom < Formula
   desc "Keep your filesystem free of clutter"
   homepage "https://github.com/gpanders/pushbroom"
-  url "https://github.com/gpanders/pushbroom/archive/v0.1.5.tar.gz"
-  sha256 "22037cb7d1f8ecdf438ba6fda161de4b1cf7f2c6924ae8952d1e00d80119d06e"
+  url "https://github.com/gpanders/pushbroom/archive/v0.2.0.tar.gz"
+  sha256 "f4af0a86b56a3ac66d79f1edad220953f06fc5430e21e9747eb54e906d41c55e"
   head "https://github.com/gpanders/pushbroom.git"
 
   depends_on "python"
@@ -18,7 +18,7 @@ class Pushbroom < Formula
     To get started, copy the configuration file to ~/.config/pushbroom/config:
 
         mkdir -p ~/.config/pushbroom
-        cp -n #{etc}/pushbroom.conf ~/.config/pushbroom/config
+        cp #{etc}/pushbroom.conf ~/.config/pushbroom/config
   EOS
   end
 
