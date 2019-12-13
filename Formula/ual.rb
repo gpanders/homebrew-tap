@@ -1,8 +1,8 @@
 class Ual < Formula
   desc "Create and manage your own man pages"
   homepage "https://github.com/gpanders/ual"
-  url "https://github.com/gpanders/ual/archive/v0.2.0.tar.gz"
-  sha256 "de42c369e48c59db562ad1b596e81fec2e7661ac809945964e20b1f791372db8"
+  url "https://github.com/gpanders/ual/archive/v0.2.2.tar.gz"
+  sha256 "0a7255abf76b61dfb31896cd1cead11b8537b52e6121a125658c4c6bee903756"
   head "https://github.com/gpanders/ual.git"
 
   depends_on "pandoc"
