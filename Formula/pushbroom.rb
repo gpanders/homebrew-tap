@@ -1,9 +1,9 @@
 class Pushbroom < Formula
   desc "Keep your filesystem free of clutter"
-  homepage "https://github.com/gpanders/pushbroom"
-  url "https://github.com/gpanders/pushbroom/archive/v0.3.2.tar.gz"
-  sha256 "dda2718104ac0109737b76b4f1d450879fefc068fece35852756d298e91e7322"
-  head "https://github.com/gpanders/pushbroom.git"
+  homepage "https://git.sr.ht/~gpanders/pushbroom"
+  url "https://git.sr.ht/~gpanders/pushbroom/archive/v0.3.2.tar.gz"
+  sha256 "880f640b67ffbd7f483122591a317219f1864cfa5b0771ab5ae622843ae9fea5"
+  head "https://git.sr.ht/~gpanders/pushbroom", :using => :git
 
   depends_on "python"
 
