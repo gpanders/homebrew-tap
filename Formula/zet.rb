@@ -7,6 +7,8 @@ class Zet < Formula
 
   def install
     system "zig", "build", "--prefix", prefix, "-Drelease-small=true", "install"
+    bash_completion.install "completions/bash/zet"
+    fish_completion.install "completions/fish/zet.fish"
   end
 
   test do
