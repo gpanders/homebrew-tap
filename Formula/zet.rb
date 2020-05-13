@@ -6,7 +6,8 @@ class Zet < Formula
   depends_on "zig" => :build
 
   def install
-    system "zig", "build", "--prefix", prefix, "-Drelease-small=true", "install"
+    system "make"
+    bin.install "zig-cache/bin/zet"
     bash_completion.install "completions/bash/zet"
     fish_completion.install "completions/fish/zet.fish"
   end
