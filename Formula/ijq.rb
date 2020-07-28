@@ -9,7 +9,7 @@ class Ijq < Formula
   depends_on "jq"
 
   def install
-    system "make", "PREFIX=#{prefix}", "install"
+    system "make", "prefix=#{prefix}", "install"
   end
 
   test do
