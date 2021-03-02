@@ -3,11 +3,11 @@ class Wk < Formula
   homepage "https://git.sr.ht/~gpanders/wk"
   head "https://git.sr.ht/~gpanders/wk", :using => :git
 
-  depends_on "zig" => :build
+  depends_on "nim" => :build
 
   def install
-    system "make"
-    bin.install "zig-cache/bin/wk"
+    system "nimble build -y -d:release --app:console --gc:orc"
+    bin.install "wk"
     bash_completion.install "contrib/completions/bash/wk"
     fish_completion.install "contrib/completions/fish/wk.fish"
   end
