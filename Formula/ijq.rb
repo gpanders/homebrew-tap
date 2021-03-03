@@ -1,8 +1,8 @@
 class Ijq < Formula
   desc "Interactive jq"
   homepage "https://sr.ht/~gpanders/ijq"
-  url "https://git.sr.ht/~gpanders/ijq/archive/v0.2.4.tar.gz"
-  sha256 "1060f48ceb0b8770531253cfe3b98b29b35e54655b794008ed78fc3079a01140"
+  url "https://git.sr.ht/~gpanders/ijq/archive/v0.2.5.tar.gz"
+  sha256 "c1bd6873142fb5e5353dfa0d6ea07e03d098c908f51560a31832501f5cc91003"
   head "https://git.sr.ht/~gpanders/ijq", :using => :git
 
   depends_on "go" => :build
